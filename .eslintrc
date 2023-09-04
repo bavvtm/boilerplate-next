@@ -1,3 +1,12 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "env": {
+    "node": true,
+    "browser": true,
+    "amd": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals"
+  ]
 }
