@@ -7,8 +7,11 @@
       "parserOptions": {
         "project": "./tsconfig.json"
       },
-      "plugins": [
-        "@typescript-eslint"
+      "plugins": ["@typescript-eslint"],
+      "extends": [
+        "eslint:recommended",
+        "next/core-web-vitals",
+        "plugin:@typescript-eslint/recommended"
       ]
     }
   ],
@@ -20,7 +23,6 @@
   "extends": [
     "eslint:recommended",
     "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ]
 }
